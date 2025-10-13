@@ -4,10 +4,9 @@ import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
 
-<<<<<<< HEAD
+
 import com.educandoweb.course.entities.enums.OrderStatus;
-=======
->>>>>>> 1059ef9880fab9f0d3d1ff09a9d0c2c2ce855ab0
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import jakarta.persistence.Entity;
@@ -30,11 +29,10 @@ public class Order implements Serializable {
 
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'", timezone = "GMT")
 	private Instant moment;
-<<<<<<< HEAD
+
 	
 	private Integer orderStatus;
-=======
->>>>>>> 1059ef9880fab9f0d3d1ff09a9d0c2c2ce855ab0
+
 
 	@ManyToOne
 	@JoinColumn(name = "client_id")
